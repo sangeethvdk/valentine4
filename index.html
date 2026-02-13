@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div class="hearts"></div>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+    <img src="bg1.jpg" class="bg-image">
+
+    <div class="content">
+        <h1 class="neon">Happy Valentine's Day</h1>
+        <h2 class="handwriting">Reethika</h2>
+        <h3 class="handwriting small">Bobby</h3>
+        <p class="small-text">It's for you</p>
+        <button onclick="goToPage(2)" class="btn">Click Here 💌</button>
+    </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+    <h1 class="neon small-title">Happy Valentine's Day</h1>
+    <h2 class="handwriting small">Bobby</h2>
+
+    <p id="loveText" class="love-text"></p>
+
+    <button onclick="goToPage(3)" class="btn">Continue Our Journey ❤️</button>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page slideshow-page">
+
+    <div class="slideshow">
+        <div class="slide active"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+
+    <div class="slideshow-content">
+        <h1 class="journey">Three Years of Our Journey</h1>
+
+        <div class="counter">
+            Together for: <span id="loveCounter"></span>
+        </div>
+
+        <div class="gallery">
+            <div class="photo">
+                <img src="img1.jpg" onclick="openImage(this)">
+                <p>Our first beautiful memory ❤️</p>
+            </div>
+            <div class="photo">
+                <img src="img2.jpg" onclick="openImage(this)">
+                <p>Your smile is my peace 💕</p>
+            </div>
+            <div class="photo">
+                <img src="img3.jpg" onclick="openImage(this)">
+                <p>Every moment with you is magic ✨</p>
+            </div>
+        </div>
+
+        <p class="final">
+            No matter what happens, I will always choose you.  
+            Forever your Bobby ❤️
+        </p>
+    </div>
+
+    <div id="finalReveal" class="final-reveal">
+        I Love You Reethika ❤️
+    </div>
+
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="image-modal">
+    <span onclick="closeImage()" class="close-btn">×</span>
+    <img id="modalImage">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
